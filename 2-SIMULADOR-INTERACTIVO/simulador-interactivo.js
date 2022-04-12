@@ -7,6 +7,9 @@ let sueldoNetoHora = 0;
 let sueldoNetoMes = 0;
 let sueldoxHora = 0;
 let horasTotales = 0;
+let sueldoHoraTotal = 0;
+let sueldoImpuestoHora = 0;
+let sueldoImpuestoMes = 0;
 
 
 
@@ -24,25 +27,28 @@ saludo();
 let modoSueldo = prompt("Si su sueldo es mensual precione 'm' si es por hora precione 'h'");
 
 function SueldoTotalMensualdeHoras() {
-    let sueldoTotaldeHoras = sueldoxHora * horasTotales
+    sueldoTotaldeHoras = sueldoxHora * horasTotales
 }
 
 function calSueldoNetoHora () {
-    let sueldoNetoHora = (sueldoxHora * horasTotales) - (impuesto * (sueldoxHora * horasTotales))
+    sueldoHoraTotal = sueldoxHora * horasTotales;
+    sueldoImpuestoHora = impuesto * sueldoHoraTotal;
+    sueldoNetoHora = sueldoHoraTotal - sueldoImpuestoHora;
     alert('Su sueldo total es ' + sueldoNetoHora);
 }
 
 function calSueldoNetoMes () {
-    let sueldoNetoMes = sueldoMensual - (impuesto * sueldoMensual)
+    sueldoImpuestoMes = impuesto * sueldoMensual;
+    sueldoNetoMes = sueldoMensual - sueldoImpuestoMes;
     alert('Su sueldo total es ' + sueldoNetoMes);
 }
 
 //Pregunta si el sueldo es mensual u horario//
 if (modoSueldo.toLowerCase() == "m") {
-    let sueldoMensual = parseInt(prompt("Ingrese su sueldo mensual en bruto"));
+    sueldoMensual = parseInt(prompt("Ingrese su sueldo mensual en bruto"));
     calSueldoNetoMes();
 } else if (modoSueldo.toLowerCase() == "h") {
-    let sueldoxHora = parseInt(prompt("Ingrese el valor bruto de la hora de trabajo"));
-    let horasTotales = parseInt(prompt("Ingrese las horas totales trabajadas"));
+    sueldoxHora = parseInt(prompt("Ingrese el valor bruto de la hora de trabajo"));
+    horasTotales = parseInt(prompt("Ingrese las horas totales trabajadas"));
     calSueldoNetoHora();
 }
