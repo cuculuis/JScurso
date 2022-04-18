@@ -1,0 +1,9 @@
+nombre de personaje
+Elige a tu personaje Verde - Azul - Rojo
+
+Caminar - lanzar dado 1 3 5 caminas y 2 3 6 aparecen n enemigos
+lanza dado 1 y 3 no haces daño de 2 y 4 haces poco daño de 5 y 6 matas de un golpe al enemigo.
+caminar y/n
+
+y se vuelve el ciclo hasta mantar a todos
+n sobreviviste! :D
