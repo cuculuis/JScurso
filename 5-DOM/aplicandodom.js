@@ -32,5 +32,5 @@ if (Pregunta == 'Y') {
                 <hr>`
             document.body.appendChild(contenedor);
         }
-    }
+    } else {console.log('Usted decidió no ver los estados.')}
 }
