@@ -84,7 +84,7 @@ if (Jugar == "Y") {
                 console.log('¡Ha aparecido una criatura! Es un ' + Criaturas.indexOf[Math.random*5+1]);
                 break;
         }
-    }while (Recorrido <= 0 || Criaturas.length == 0)
+    }while (Camino <= 0 || Criaturas.length == 0)
 } else {
     alert('¡Adios! ¡Vuelve pronto!')
 }
