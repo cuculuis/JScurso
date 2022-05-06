@@ -1,5 +1,6 @@
 ///CARACTERISTICAS DE LOS MONSTRUOS////
-class Monstruos {
+class Monstruos 
+{
     constructor(Nombre, Nivel) {
         this.Nombre = Nombre.toUpperCase()
         this.Nivel = Nivel
@@ -20,20 +21,24 @@ Criaturas.push(new Monstruos('Demonio', 3))
 
 ///CARACTERISTICAS DEL PERSONAJE////
 class Personaje {
-    constructor(Tipo, Vida) {
+    constructor(Tipo, Vida) 
+    {
         this.TipodePersonaje = Tipo
         this.Vida = Vida
         this.Ataque = 0
         
-        if (TipodePersonaje == "VERDE") {
+        if (TipodePersonaje == "VERDE") 
+        {
             this.Vida = 500
             this.Ataque = 25
         }
-        if (this.TipodePersonaje == "ROJO") {
+        if (this.TipodePersonaje == "ROJO") 
+        {
             this.Vida = 300
             this.Ataque = 100
         }
-        if (this.TipodePersonaje == "AZUL") {
+        if (this.TipodePersonaje == "AZUL") 
+        {
             this.Vida = 400
             this.Ataque = 50
         }
@@ -46,7 +51,12 @@ class Personaje {
 ///VARIABLES INDEPENDIENTES///
 let Recorrido = 0
 let Camino = 30
-let Dado = 1+Math.round(Math.random()*5);
+let Dado = function() {    
+    this.lanzarDado = function() 
+    {
+        1+Math.round(Math.random()*5);
+    }
+}
 
 
 ///DESPLAZAMIENTO///
@@ -56,7 +66,7 @@ function Desplazamiento() {
 } 
 
 ///DATOS DE PERSONAJE///
-let Jugar = prompt('¿Quieres jugar? Por favor escriba "Y" o "N"').toUpperCase()
+//let Jugar = prompt('¿Quieres jugar? Por favor escriba "Y" o "N"').toUpperCase()
 const Estatus = []
 
 if (Jugar == "Y") {
@@ -77,7 +87,7 @@ if (Jugar == "Y") {
         let Seguirjugando = prompt('¿Quieres seguir? Escriba "Y" o "N"').toUpperCase()
         if (Seguirjugando != "Y") break
     }
-}   
+}
 ////RESPUESTA SI DICE QUE NO////
 alert('¡Adios! ¡Vuelve pronto!')
 

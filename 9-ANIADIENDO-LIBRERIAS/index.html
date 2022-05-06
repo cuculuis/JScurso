@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!--Etiquetas meta importantes-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Etiquetas bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Eventos</title>
+</head>
+<body>
+    <h1>Probando Eventos</h1>
+
+    <form id="Formulario" class="container">
+        <!--Nombre y apellido del usuario-->
+        <div class="col">
+            <div class="col">
+                <input type="text" class="form-control formtext" placeholder="Nombre" aria-label="First name" required>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control formtext" placeholder="Apellido" aria-label="Last name" required>
+            </div>
+        </div>
+        
+        <!--Sexo del usuario-->
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" required>
+            <label class="form-check-label" for="flexRadioDefault1">
+                Femenino
+            </label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" required>
+            <label class="form-check-label" for="flexRadioDefault2">
+                Masculino
+            </label>
+        </div>
+        
+        <!--Email del usuario-->
+        <div class="mb-3">
+            <label for="" class="form-label formtext">Email</label>
+            <input type="email" placeholder="Correo electronico"class="form-control formtext" id="" aria-describedby="emailHelp" required>
+        </div>
+        <div class="mb-3">
+        
+        <!--Edad del usuario-->    
+        </div>
+            <select id="inputState" class="form-select formtext" required>
+                <option disable selected>Edad</option>
+                <option value="">0 a 18</option>
+                <option value="">18 a 30</option>
+                <option value="">Más de 30</option>
+            </select>
+        
+        <!--Sugerencia del usuario-->
+        <div class="mb-3 text-center">
+            <label for="exampleFormControlTextarea1" class="form-label">Cuentanos cómo fue tu experiencia y qué te gustaría que mejoremos</label>
+            <textarea class="form-control formtext" id="exampleFormControlTextarea1" rows="3" required></textarea>
+        </div>
+
+        <!--Boton de check-->
+        <div class="form-check justify-content-center">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+            <label class="form-check-label" for="flexCheckDefault">
+                Acepto los terminos y condiciones.
+            </label>
+        </div>
+        
+        <!--Boton de enviar-->
+        <button type="submit" class="boton--enviar btn btn-dark">Enviar</button>
+    </form>
+
+    <!--Script de boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <!--Script libreria-->
+    <script src="./js/gamejs-2.0.1-min.js"></script>
+    <!--Script propio-->
+    <script src="./js/index.js"></script>
+</body>
+</html>
