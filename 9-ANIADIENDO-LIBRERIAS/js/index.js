@@ -87,7 +87,7 @@ function update () {
 
     //Alerta cuando ganas
     if (score === 120) {
-    alert('You win!')
+    alert('¡Ganaste!')
     score = 0
     }
 }
@@ -95,5 +95,5 @@ function update () {
 function collectDiamond (player, diamond) {
     diamond.kill()
     score += 10
-    scoreText.text = 'Score: ' + score
+    scoreText.text = 'Puntuación: ' + score
 }
