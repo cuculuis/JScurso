@@ -1,0 +1,19 @@
+{
+    "robotPartImagesArray": [
+        [
+            "./images/robot/head1.svg",
+            "./images/robot/head2.svg",
+            "./images/robot/head3.svg"
+        ],
+        [
+            "./images/robot/torso1.svg",
+            "./images/robot/torso2.svg",
+            "./images/robot/torso3.svg"
+        ],
+        [
+            "./images/robot/legs1.svg",
+            "./images/robot/legs2.svg",
+            "./images/robot/legs3.svg"
+        ]
+    ]
+}
