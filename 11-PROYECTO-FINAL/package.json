@@ -1,0 +1,17 @@
+{
+  "name": "11-proyecto-final",
+  "version": "1.0.0",
+  "description": "jueguitos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jueguito"
+  ],
+  "author": "Luis Lopez",
+  "license": "ISC",
+  "devDependencies": {
+    "es-dev-server": "^2.1.0"
+  }
+}
