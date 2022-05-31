@@ -137,7 +137,6 @@ body {
   padding: 80px 100px;
   box-sizing: border-box;
   max-width: unset;
-
 }
 
 .characterWrap {
@@ -349,7 +348,7 @@ body {
 }
 
 .redConsole {
-  color: red;
+  color: rgb(0, 0, 0);
   font-weight: 700;
 }
 
